@@ -1056,8 +1056,9 @@ h3 {
 .logo a {
   border: 1px solid white;
   color: white;
-  padding: 5px 30px;
+  padding: 5px 10px;
   font-size: 22px;
+  cursor: default;
   @media (min-width: 768px){
     padding: 10px 40px;
   
@@ -1284,7 +1285,16 @@ h3 {
   height: 100%;
   background: rgba(31, 31, 31, 0.9);
 }
-
+.practice_hover img{
+  width: 40px;
+  margin: 10px 0 20px 0;
+  @media (min-width: 1400px) and (max-width: 1500px){
+    width: 30px;
+  }
+  @media (min-width: 768px){
+    width: 85px;
+  }
+}
 /* line 33, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_practice.scss */
 .practice_area .single_practice .practice_hover i {
   font-size: 85px;
@@ -1869,18 +1879,18 @@ h3 {
 
 @media (max-width: 767px) {
   /* line 125, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_footer.scss */
-  .footer .socail_links {
+  .footer .social_links {
     margin-top: 30px;
   }
 }
 
 /* line 130, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_footer.scss */
-.footer .socail_links ul li {
+.footer .social_links ul li {
   display: inline-block;
 }
 
 /* line 132, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_footer.scss */
-.footer .socail_links ul li a {
+.footer .social_links ul li a {
   background: #313131;
   color: #8B8B8B;
   width: 40px;
@@ -1894,9 +1904,11 @@ h3 {
   margin: 0 3px;
   font-size: 17px;
 }
-
+.footer .social_links ul li:nth-child(2) i{
+  transform: scale(1.3);
+}
 /* line 143, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_footer.scss */
-.footer .socail_links ul li a:hover {
+.footer .social_links ul li a:hover {
   color: #F2C64D;
 }
 
