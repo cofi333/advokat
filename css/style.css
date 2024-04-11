@@ -2094,11 +2094,26 @@ h3 {
   font-size: 22px;
   line-height: 34px;
   font-weight: 400;
-  margin-top: 33px;
-  margin-bottom: 44px;
+  margin-bottom: 50px;
+
   @media (min-width: 768px){
     padding: 0 100px;
   }
+}
+
+.question_answer {
+  margin-bottom: 80px;
+}
+
+.testmonial_area .single_testmonial .question_answer p {
+  margin-bottom: 10px;
+}
+
+.testmonial_area .single_testmonial h2 {
+  font-size: 22px;
+  color: #fff;
+  line-height: 34px;
+  margin-bottom: 44px;
 }
 
 @media (max-width: 767px) {
