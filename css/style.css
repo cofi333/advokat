@@ -58,7 +58,6 @@ a:focus,
 
 /* line 27, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/theme-default.scss */
 a:focus {
-  color: #fff;
   text-decoration: none;
 }
 
@@ -73,7 +72,7 @@ a:hover,
 /* line 38, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/theme-default.scss */
 a,
 button {
-  color: #1F1F1F;
+  color: #727272;
   outline: medium none;
 }
 
@@ -288,6 +287,11 @@ h3 {
 .owl-carousel .owl-nav div.owl-next {
   left: auto;
   right: 0;
+}
+.owl-stage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* line 219, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/theme-default.scss */
@@ -1152,7 +1156,6 @@ h3 {
   line-height: 68px;
   position: relative;
   z-index: 8;
-  text-transform: capitalize;
 }
 
 @media (max-width: 767px) {
@@ -1269,11 +1272,38 @@ h3 {
 .practice_area .single_practice {
   margin: 0 4.5px 30px 4.5px;
   position: relative;
+  min-height: 1200px;
+  @media (min-width: 550px){
+    min-height: 800px;
+  }
+  @media (min-width: 768px){
+    min-height: 700px;
+  }
+  @media (min-width: 1700px){
+    min-height: 1000px;
+  }
+  @media (min-width: 1400px) and (max-width: 1700px){
+    min-height: 1120px;
+  }
 }
 
 /* line 21, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_practice.scss */
 .practice_area .single_practice .practice_image img {
   width: 100%;
+  object-fit: cover;
+  min-height: 1200px;
+  @media (min-width: 550px){
+    min-height: 800px;
+  }
+  @media (min-width: 768px){
+    min-height: 700px;
+  }
+  @media (min-width: 1700px){
+    min-height: 1000px;
+  }
+  @media (min-width: 1400px) and (max-width: 1700px){
+    min-height: 1120px;
+  }
 }
 
 /* line 25, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_practice.scss */
@@ -1284,6 +1314,20 @@ h3 {
   width: 100%;
   height: 100%;
   background: rgba(31, 31, 31, 0.9);
+}
+.practice_area .single_practice .practice_hover p{
+  padding: 0 8px;
+  @media (min-width: 768px){
+    padding: 0 20px;
+
+  }
+}
+.practice_hover_wrapper{
+  padding: 20px 0;
+  @media (max-width: 1360px){
+    justify-content: center;
+    align-items: center;
+  }
 }
 .practice_hover img{
   width: 40px;
@@ -1500,7 +1544,6 @@ h3 {
 .about_area {
   background: #FFFDF8;
   padding-top: 150px;
-  padding-bottom: 120px;
   margin-right: 50px;
   margin-left: 50px;
   position: relative;
@@ -1765,6 +1808,11 @@ h3 {
 .footer .footer_top .footer_widget p.footer_text a.domain {
   color: #B2B2B2;
   font-weight: 400;
+}
+
+.appointment_area a.domain:hover {
+  color: #F2C64D;
+  border-bottom: 1px solid #F2C64D;
 }
 
 /* line 37, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_footer.scss */
@@ -2048,6 +2096,9 @@ h3 {
   font-weight: 400;
   margin-top: 33px;
   margin-bottom: 44px;
+  @media (min-width: 768px){
+    padding: 0 100px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2132,13 +2183,14 @@ h3 {
 
 .appiontment_thumb {
   margin-right: 50px;
+  max-width: 250px;
 }
 
 .appiontment_thumb img{
   display: none;
   width: 100%;
   @media (min-width: 1200px){
-    max-width: 500px;
+    max-width: 250px;
     display: block;
   }
 }
@@ -2168,7 +2220,6 @@ h3 {
   font-size: 16px;
   color: #727272;
   margin-top: 13px;
-  margin-bottom: 56px;
 }
 
 /* line 46, C:/Users/SPN Graphics/Desktop/CL September/211 Lawyer/HTML/scss/_appoinment.scss */
@@ -2218,6 +2269,7 @@ h3 {
   cursor: pointer;
 }
 .contact_wrapper{
+  max-width: 500px;
   @media (min-width: 1000px){
     padding-left: 50px;
   }
